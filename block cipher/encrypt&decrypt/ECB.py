@@ -22,11 +22,18 @@ def decrypt_ecb(ciphertext, key):
 
 
 key = os.urandom(16)
-plaintext = 'This is a ciphertext. OuO, Secret!Secret!Secret!'
+plaintext = '{name:naup96321;password:123456;role:user}'
 
+#CryptoADV{Fake_f
+#laf_try_to_do_de
+#mo}
 
 ciphertext = encrypt_ecb(plaintext, key)
 print(f"Encrypted: {ciphertext}")
 
 decrypted_plaintext = decrypt_ecb(ciphertext, key)
 print(f"Decrypted: {decrypted_plaintext}")
+
+for i in range(0,len(ciphertext),16):
+    print(ciphertext[i:i+16])
+
