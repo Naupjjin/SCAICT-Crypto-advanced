@@ -1,4 +1,5 @@
 from sage.all import GF
+
 class Point:
 	def __init__(self,x,y,p):
 		F = GF(p) #定義有限域
