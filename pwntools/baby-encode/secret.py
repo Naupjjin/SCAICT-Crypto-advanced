@@ -1,0 +1,1 @@
+FLAG=b'CryptoADV{easy_encode_chal_owob}'

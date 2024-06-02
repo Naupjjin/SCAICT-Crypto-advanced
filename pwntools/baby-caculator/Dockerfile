@@ -9,5 +9,5 @@ WORKDIR /app
 
 COPY ./src /app/
 
-EXPOSE 30000
-ENTRYPOINT ["socat", "tcp-listen:30000,fork", "EXEC:'/opt/venv/bin/python server.py'"]
+EXPOSE 60000
+ENTRYPOINT ["socat", "tcp-listen:60000,fork", "EXEC:'/opt/venv/bin/python server.py'"]
