@@ -24,9 +24,6 @@ def decrypt_ecb(ciphertext, key):
 key = os.urandom(16)
 plaintext = '{name:naup96321;password:123456;role:user}'
 
-#CryptoADV{Fake_f
-#laf_try_to_do_de
-#mo}
 
 ciphertext = encrypt_ecb(plaintext, key)
 print(f"Encrypted: {ciphertext}")
