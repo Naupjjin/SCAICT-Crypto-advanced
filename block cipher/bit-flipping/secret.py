@@ -39,9 +39,10 @@ def main():
             print(f"iv: {base64.b64encode(iv)}")
 
         elif number==2:
-            CIPHER=input('Your cipher= ').encode()
+            
+            CIPHER=bytes.fromhex(input("Your Cipher= ").strip())
             decrypted_plaintext = decrypt_cbc(CIPHER)
-            print(f"plaintext: {base64.b64encode(decrypted_plaintext)}")
+            print(f"plaintext: {decrypted_plaintext}")
 
 
             if decrypted_plaintext[0]=='H':
@@ -59,10 +60,12 @@ def main():
         else:
             exit()
 
+
 try:
     main()
 
 except:
     print("error!")
     exit()
+
 '''

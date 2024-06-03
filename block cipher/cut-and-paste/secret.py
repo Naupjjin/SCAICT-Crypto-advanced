@@ -1,3 +1,5 @@
+FLAG=b'CryptoADV{Cut_and_paste_your_love}'
+sourcecode='''
 import os
 from Crypto.Cipher import AES
 from secret import FLAG, sourcecode
@@ -48,3 +50,4 @@ try:
 except:
     print('LOSE')
     exit()
+'''

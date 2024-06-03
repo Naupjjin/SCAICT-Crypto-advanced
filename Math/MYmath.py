@@ -18,7 +18,7 @@ def crt(c, n):
 
     for Ai, ni in zip(c, n):
         Ni = N_ALL // ni
-        total += Ai * Ni * (gmpy2.gcdext(Ni, ni)[1] % ni)
+        total += Ai * Ni * (gcdext(Ni, ni)[1] % ni)
 
     return total % N_ALL
 
