@@ -1,3 +1,5 @@
+FLAG=b'CryptoADV{brute_force_is_a_good_civilization?}'
+sourcecode='''
 import os
 from Crypto.Cipher import AES
 from secret import FLAG, sourcecode
@@ -31,3 +33,5 @@ try:
 except:
     print("error...")
     exit()
+
+'''

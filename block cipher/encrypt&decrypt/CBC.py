@@ -1,6 +1,7 @@
 from Crypto.Cipher import AES
 from Crypto.Util.Padding import pad, unpad
 from Crypto.Random import get_random_bytes
+import os
 
 def encrypt_cbc(plaintext, key):
 
@@ -27,7 +28,7 @@ def decrypt_cbc(ciphertext, key):
        
     return decrypted_padded_plaintext
 
-key = b'This is a key123'  
+key = os.urandom(16) 
 plaintext = "Hello, world!"
 
 ciphertext = encrypt_cbc(plaintext, key)
