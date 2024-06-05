@@ -10,5 +10,5 @@ WORKDIR /app
 COPY ./src /app/
 RUN  /opt/venv/bin/pip install -r requirements.txt
 
-EXPOSE 60004
-ENTRYPOINT ["socat", "tcp-listen:60004,fork", "EXEC:'/opt/venv/bin/python server.py'"]
+EXPOSE 60006
+ENTRYPOINT ["socat", "tcp-listen:60006,fork", "EXEC:'/opt/venv/bin/python server.py'"]
