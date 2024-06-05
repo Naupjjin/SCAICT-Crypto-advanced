@@ -4,13 +4,13 @@ def encrypt(m,e,n):
     c=pow(m,e,n)
     return c
 
-msg = b"CryptoADV{Fake_Flag}"
+msg = b"CryptoADV{Fake_flag}"
 m = bytes_to_long(msg)
 
-p=getPrime(1024)
-q=getPrime(1024)
+p=getPrime(2048)
+q=getPrime(2048)
 n=p*q
-e=65537
+e=3
 
 print("n= ", n)
 print("p= ", p)

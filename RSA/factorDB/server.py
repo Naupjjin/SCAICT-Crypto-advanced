@@ -7,8 +7,8 @@ def encrypt(m,e,n):
 msg = b"CryptoADV{Fake_Flag}"
 m = bytes_to_long(msg)
 
-p=getPrime(1024)
-q=getPrime(1024)
+p=getPrime(50)
+q=getPrime(50)
 n=p*q
 e=65537
 
