@@ -1,1 +1,0 @@
-FLAG=b'CryptoADV{padding!padding!padding!is_a_cool_way_to brute_force}'
