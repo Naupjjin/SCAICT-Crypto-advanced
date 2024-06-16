@@ -10,9 +10,8 @@ def oracle(m):
     r.sendlineafter(b'message = ', m.hex())
     return bytes.fromhex(r.recvline().strip().partition(b' = ')[2].decode())
 
-
 flag = b''
-for i in range(46):
+for i in range(100):
     
     prefix = b'A' * (48 - 1 - i)
     target = oracle(prefix)[:48]
@@ -24,3 +23,6 @@ for i in range(46):
             break
 
 r.interactive()
+#AAA..
+#AAA..
+#aaaaaaaaaaaaaa

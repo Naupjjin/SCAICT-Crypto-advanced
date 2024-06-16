@@ -4,7 +4,7 @@ def encrypt(m,e,n):
     c=pow(m,e,n)
     return c
 
-msg = b"CryptoADV{Fake_Flag}"
+msg = b"CryptoADV{Have_p_q_can_decrypt_easy!}"
 m = bytes_to_long(msg)
 
 p=getPrime(1024)
