@@ -20,7 +20,6 @@ def decrypt_ecb(ciphertext, key):
     
     return decrypted_padded_plaintext
 
-
 key = os.urandom(16)
 plaintext = '{name:naup96321;password:123456;role:user}'
 
