@@ -14,6 +14,7 @@ def main():
         elif operation == '*':
             correct_answer = a * b
 
+        
         print(f"Round {i}")
         print("-"*20)
         print(f"caculator： {a} {operation} {b}")
