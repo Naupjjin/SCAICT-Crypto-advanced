@@ -3,7 +3,6 @@ import functools
 from Crypto.Util.number import *
 from gmpy2 import *
 
-
 def crt(c, n):
     '''
     Input: [c_1, ... c_i], [n_1, ..., n_i]
